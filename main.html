@@ -7979,12 +7979,6 @@ There are 10 categories that the image could fit under, so I want to map to one 
 <li><strong>Dense Layers</strong>: Fully connected layers for final classification</li>
 </ul>
 <h3 id="Baseline-Architecture:">Baseline Architecture:<a class="anchor-link" href="#Baseline-Architecture:">¶</a></h3><ul>
-<li>Conv2D(32) → MaxPool</li>
-<li>Conv2D(64) → MaxPool</li>
-<li>Flatten → Dense(128) → Dropout(0.5)</li>
-<li>Output: Dense(10, softmax)</li>
-</ul>
-<h3 id="Baseline-Architecture:">Baseline Architecture:<a class="anchor-link" href="#Baseline-Architecture:">¶</a></h3><ul>
 <li><strong>Conv2D(32) → MaxPool</strong>: Extracts low-level, simple features (edges, textures) and reduces spatial dimensions.</li>
 <li><strong>Conv2D(64) → MaxPool</strong>: Captures more complex patterns and further reduces dimensions.</li>
 <li><strong>Flatten → Dense(128)</strong>: Flattens feature maps and connects to a fully connected layer to learn high-level representations.</li>
